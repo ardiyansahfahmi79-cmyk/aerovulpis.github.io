@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AeroVulpis - Advanced Trading Terminal</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
-            height: 100%;
-            width: 100%;
+            height: 100vh;
+            width: 100vw;
             overflow: hidden;
             background-color: #00040a;
         }
@@ -21,14 +17,18 @@
             height: 100vh;
             border: none;
             display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
     <iframe 
-        src="https://aerovulpis-assistant.streamlit.app/?embed=true" 
+        src="https://aerovulpis-assistant.streamlit.app/?embed=true&embed_options=show_toolbar,show_padding"
         allow="clipboard-read; clipboard-write; fullscreen; camera; microphone"
-        allowfullscreen>
+        allowfullscreen
+        scrolling="no">
     </iframe>
 </body>
 </html>
